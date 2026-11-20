@@ -7,7 +7,8 @@ CREATE TABLE courses (
     description text    NOT NULL,
     credits     integer NOT NULL CHECK (credits > 0),
     is_elective boolean NOT NULL DEFAULT false,
-    likes       integer NOT NULL DEFAULT 0 CHECK (likes >= 0)
+    likes       integer NOT NULL DEFAULT 0 CHECK (likes >= 0),
+    level       text    NOT NULL CHECK (level IN ('beginner', 'intermediate', 'advanced'))
 );
 
 CREATE TABLE students (

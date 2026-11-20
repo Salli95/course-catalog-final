@@ -1,0 +1,38 @@
+# Local environment files; keep the template in version control.
+.env*
+!.env.example
+**/.env*
+!**/.env.example
+
+# Dependencies and build output
+**/node_modules/
+**/.next/
+**/out/
+**/dist/
+**/build/
+**/coverage/
+**/.vercel/
+
+# Python
+**/.venv/
+**/venv/
+**/__pycache__/
+**/.pytest_cache/
+**/.mypy_cache/
+**/.ruff_cache/
+*.py[cod]
+
+# Tooling and generated files
+**/.idea/
+*.tsbuildinfo
+next-env.d.ts
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# OS files and local certificates
+.DS_Store
+Thumbs.db
+*.pem
