@@ -8,7 +8,9 @@ RUN npm ci
 COPY . .
 
 ARG NEXT_PUBLIC_API_URL=/api
+ARG API_URL=http://backend:8000
 ENV NEXT_PUBLIC_API_URL=${NEXT_PUBLIC_API_URL}
+ENV API_URL=${API_URL}
 
 RUN npm run build && npm prune --omit=dev
 
